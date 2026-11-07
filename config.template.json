@@ -1,0 +1,23 @@
+{
+  "log": { "loglevel": "warning" },
+  "inbounds": [
+    {
+      "port": __PORT__,
+      "listen": "0.0.0.0",
+      "protocol": "vless",
+      "settings": {
+        "clients": [ { "id": "__UUID__", "level": 0 } ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": { "path": "__WS_PATH__" },
+        "security": "none"
+      }
+    }
+  ],
+  "outbounds": [
+    { "protocol": "freedom", "settings": {} },
+    { "protocol": "blackhole", "settings": {}, "tag": "blocked" }
+  ]
+}

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: xray
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: oregon
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: XRAY_UUID
+        sync: false
+      - key: XRAY_WS_PATH
+        sync: false
