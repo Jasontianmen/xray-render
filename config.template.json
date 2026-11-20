@@ -10,8 +10,8 @@
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "xhttp",
-        "xhttpSettings": { "path": "__WS_PATH__", "mode": "auto" },
+        "network": "http",
+        "httpSettings": { "path": "__WS_PATH__" },
         "security": "none"
       }
     }
