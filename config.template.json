@@ -1,5 +1,5 @@
 {
-  "log": { "loglevel": "warning" },
+  "log": { "loglevel": "info" },
   "inbounds": [
     {
       "port": __PORT__,
